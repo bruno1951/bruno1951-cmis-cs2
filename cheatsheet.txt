@@ -10,3 +10,5 @@ git push
 git add .....
 
 git pull
+
+= : asignment operator 
