@@ -7,7 +7,7 @@ git clone --config="http.proxy=http://bruno1951:dusit@192.168.2.1:8080" https://
 
 git push
 
-git add .....
+git add .
 
 git pull
 
