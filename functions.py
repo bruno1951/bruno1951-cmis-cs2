@@ -27,8 +27,15 @@ def sphere_volume(a):
 
 print sphere_volume(5)
 
-def avg_volume (a):
-	return 
+def avg_volume(a,b):
+	c= a/2
+	d= b/2
+	y = (1.33333333333 * math.pi *c*c*c) 
+ 	x =(1.33333333333 * math.pi *d*d*d)
+	return (y + x) /2
+
+
+print avg_volume(10,20) 
 
 
  
