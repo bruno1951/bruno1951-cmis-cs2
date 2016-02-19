@@ -62,11 +62,11 @@ def center (a): # This will centralize the message in the middle
 
 
 
-def msg_box(a): #This will 
+def msg_box(a): #This will create a msg box so you put text into into the box  
 	return "+" + ((len(a)+4)*"-") + "+" + "\n" + "|" + (2*" ") + (a)+ (2*" ") + "|" + "\n" + "+" + ((len(a)+4)*"-") + "+"  
 
 
- 
+#
  
 add1 = add (5, 1) 
 add2 = add(7, 6)
@@ -74,35 +74,64 @@ add2 = add(7, 6)
 sub1 = sub(4,4)
 sub2 = sub(9,5)
 
-mul1 = (6, 5)
-mul2 = (8, 2)
+mul1 = mul(6, 5)
+mul2 = mul(8, 2)
 
-div1 = (5,6)
-div2 = (6,7)
+div1 = div(5,6)
+div2 = div(6,7)
 
-hours_from_seconds1 = (21,600)
-hours_from_seconds2 = (32400)
+hours_from_seconds1 = hours_from_seconds(21600)
+hours_from_seconds2 = hours_from_seconds(32400)
 
-circle_area1 = (4)
-circle_area2 = (6)
+circle_area1 = circle_area(4)
+circle_area2 = circle_area(6)
 
-sphere_volume1 = (7)
-sphere_volume2 = (8)
+sphere_volume1 = sphere_volume(7)
+sphere_volume2 = sphere_volume(8)
 
-avg_volume1 = (15, 25) 
-avg_volume2 = (35, 80)
+avg_volume1 = avg_volume(15, 25) 
+avg_volume2 = avg_volume(35, 80)
 
-area1 = (2, 3 , 3.5) 
-area2 = (5, 6, 6.5)
+area1 = area(2, 3 , 3.5) 
+area2 = area(5, 6, 6.5)
 
-right_align1 = ("Herro")
-right_align2 = (" This is hard ")
+right_align1 = right_align("Herro")
+right_align2 = right_align(" This is hard ")
 
-center1 = ("This better be centralized")
-center2 = (" Bomin is old for her grade")
+center1 = center("This better be centralized")
+center2 = center(" Bomin is old for her grade")
 
-msg_box1 = (" Steven smells " )
-msg_box2 = (" My partners are meanys" )
+msg_box1 = msg_box(" Steven smells " )
+msg_box2 = msg_box(" My partners are meanys" )
 
 
 print msg_box(str(add1))
+print msg_box(str(add2))
+
+print msg_box(str(sub1))
+print msg_box(str(sub2))
+
+print msg_box(str(mul1))
+print msg_box(str(mul2)) 
+
+print msg_box(str(div1))
+print msg_box(str(div2))
+
+print msg_box(str(hours_from_seconds1))
+print msg_box(str(hours_from_seconds2))
+
+print msg_box(str(circle_area1))
+print msg_box(str(circle_area2))
+
+print msg_box(str(sphere_volume1))
+print msg_box(str(sphere_volume2))
+
+print msg_box(str(avg_volume1))
+print msg_box(str(avg_volume2))
+
+
+print msg_box(str(area1))
+print msg_box(str(area2))
+
+
+
