@@ -68,7 +68,7 @@ def msg_box(a): #This will create a msg box so you put text into into the box
 
 #
  
-add1 = add (5, 1) 
+add1 = add(5, 1) 
 add2 = add(7, 6)
  
 sub1 = sub(4,4)
@@ -77,8 +77,8 @@ sub2 = sub(9,5)
 mul1 = mul(6, 5)
 mul2 = mul(8, 2)
 
-div1 = div(5,6)
-div2 = div(6,7)
+div1 = div(6,3)
+div2 = div(8,4)
 
 hours_from_seconds1 = hours_from_seconds(21600)
 hours_from_seconds2 = hours_from_seconds(32400)
@@ -129,9 +129,10 @@ print msg_box(str(sphere_volume2))
 print msg_box(str(avg_volume1))
 print msg_box(str(avg_volume2))
 
-
 print msg_box(str(area1))
 print msg_box(str(area2))
+
+
 
 
 
