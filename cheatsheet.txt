@@ -31,3 +31,14 @@ print str(x) + " and repeat " + str(y) + "I have never seen such potential in su
  Please come with me and become a wizard:  You are special
  No, I am not a liar:  Why would i lie such thing
  show me what you got and repeat I am impressedI have never seen such potential in such a young boy You are specialYoung one, you will be taken care of very well, theres nothing to be afraid of, I promise Why would i lie such thingCome, it is time
+
+
+>>> raw_input("Bingo:") == "Bingo"
+Bingo:Bingo
+True
+
+
+>>> raw_input("What is 2 * 2") == "4"
+What is 2 * 24
+True
+

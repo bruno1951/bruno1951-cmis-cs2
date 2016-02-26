@@ -101,7 +101,7 @@ right_align2 = right_align(" This is hard ")
 center1 = center("This better be centralized")
 center2 = center(" Bomin is old for her grade")
 
-msg_box1 = msg_box(" Steven smells " )
+msg_box1 = msg_box(" ._. " )
 msg_box2 = msg_box(" My partners are meanys" )
 
 
