@@ -42,3 +42,6 @@ True
 What is 2 * 24
 True
 
+
+python3 boolquiz.py
+
