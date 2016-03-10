@@ -1,32 +1,20 @@
 import random
 
-def eat(item):
+def random_number
+minimum = raw_input("Type in the mininum number")
+maximum = raw_input("Type in the maximum number")
 
-    if item == "lava":
-        strength = 0    
-    elif item == "grapes":
-        strength = 1
-    elif item == "peanuts":
-        strength = 2
-    elif item == "shoes":
-        strength = 3
-    elif item == "bear liver":
-        strength = 4
-    elif item == "mud":
-        strength = 5
-    elif item == "toe nails":
-        strength = 6
-    elif item == "finger nails":
-        strength = 7
-    elif item == "tuna":
-        strength = 8
-    elif item == "eternity":
-        strength = 9
-    elif item == "fried rice":
-        strength = 10
-    else:
-        strength = random.randint(0,10)
-    return strength * random.random()
+
+
+#What is the minimum number? 5
+#What is the maximum number? 10
+#I'm thinking of a number from 5 to 10.
+#What do you think it is?: 7
+
+#The target was 9.
+#Your guess was 7.
+#That's under by 2.
+
 
 
 def getAttackValue():
