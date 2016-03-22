@@ -10,26 +10,27 @@ def main():
 
 	number = random.randint(int(minimum), int(maximum))
 	your_number = raw_input("Guess the number:")
-	output = """ The number was {} """.format(number)
-	print output	
-	output = """ Your guess was {} """.format(your_number) 	
+
 	
 
 
 	if your_number > number:
-		difference = int(your_number) -  int(number)
-		output = """ Your guess was {} higher """.format(difference)
-		print output	
+		msg = "Your guess was over by" ,str(abs(int(your_number) -  int(number)))
 	
-	elif your number < number:
-		more_than = int(number) - int(number)
-		output = """ Your guess was {} lower """.format(more_than)
-		print output 
+	else: your_number < number
+	msg = "Your guess was under by" ,str(abs(int(number) - int(number)))
 
-	else: your_number == number:
-		output = """ Congratulations, you guessed the number correctly """		
-		print output		
+
+	if your_number == number:
+		msg =  "Congratulations"
+		
+		
+	output = """ The number was {}.
+Your guess was {}.
+{}""".format(number,your_number, msg)
 	
+		
+	print output 
 
 
 
