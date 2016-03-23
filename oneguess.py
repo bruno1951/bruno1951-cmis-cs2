@@ -1,10 +1,13 @@
 import random
 
+def absyourdifference(firstNo, secondNo):
+	return abs(firstNo - secondNo)
+	
 def main(): 
 	minimum = raw_input("Type in the minimum number:")
 	maximum = raw_input("Type in the maximum number:")
 
-	output = """ I'm thinking of a number between {} and {} """.format(minimum, maximum)
+	output = """I'm thinking of a number between {} and {} """.format(minimum, maximum)
 	print output
 
 
@@ -12,25 +15,19 @@ def main():
 	your_number = raw_input("Guess the number:")
 
 	
-
-
-	if your_number > number:
-		msg = "Your guess was over by" ,str(abs(int(your_number) -  int(number)))
-	
-	else: your_number < number
-	msg = "Your guess was under by" ,str(abs(int(number) - int(number)))
-
-
-	if your_number == number:
-		msg =  "Congratulations"
-		
-		
-	output = """ The number was {}.
+	output = """The number was {}.
 Your guess was {}.
-{}""".format(number,your_number, msg)
+""".format(number,your_number)
+	print output
 	
-		
-	print output 
+	if int(your_number) == int(number):
+		print  "Congratulations, You have guessed the number correctly"
+
+	elif int(your_number) > int(number):
+		print "Your guess was over by" ,str(absyourdifference(int(your_number), int(number)))
+	
+	elif int(your_number) < int(number) :
+		print "Your guess was under by" ,str(absyourdifference(int(your_number), int(number)))
 
 
 
