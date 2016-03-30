@@ -28,20 +28,43 @@ def weapon(item):
 		speed = 45
 		rangeofattack = 100
 	elif item == "long bow"
+
    
 	
-def getAttackValue():
+def character(person):
 
-    number = int(raw_input("Type attack value (0-99): "))
-    if number > 99 or number < 0:
-        number = random.randint(0, 99)
-    attackValue = float(number)/100
-    return attackValue    
+	if person == "Elf":
+		strength = 50 
+		speed = 70 
+		ranged_ability = 200
+
+	if person == "Human":
+		strength = 100
+		speed = 50 
+		ranged_ability = 150
+	
+	if person == "Dwarf": 
+		strength = 150
+		speed = 40
+		ranged_ability = 20
+	
+	if person == "Orc": 	
+		strength = 200
+		speed = 20 
+		ranged_ability = 0 
+		 
+	if person == "AUTOMAN":
+		strength = 300
+		speed = 400
+		ranged_ability = 0 
+
+def Pl
+  
 
 
-def wrestle(playerStrength, enemyStrength, playerAttackValue):
+def hack&slash(playerStrength, playerspeed, playerange, enemystrength, enemyspeed, enemyrange):
 
-    targetValue = random.random()
+    
     playerAttackResult = playerStrength + abs(playerAttackValue - targetValue)    
     enemyAttackResult =  enemyStrength + targetValue
     if playerAttackResult > enemyAttackResult:
@@ -66,8 +89,8 @@ Player {}!
 def main():
 
 
-    playerFood = raw_input("What do you want to eat? ")
-    enemy1Food = raw_input("What does enemy 1 eat? ")
+    playerweapon = raw_input("Choose your weapon")
+    playercharacter = raw_input("What does enemy 1 eat? ")
     enemy2Food = raw_input("What does enemy 2 eat? ")
 
     playerStrength = eat(playerFood)
