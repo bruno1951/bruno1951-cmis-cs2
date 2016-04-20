@@ -47,12 +47,34 @@ It will print out whether the resulting average is even or odd."""
 	
 	avgthing = float(number0) + float(number1) + float(number2) + float(number3) + float(number4)
 	
-	print avgthing
+
+	
 	avgdiv = [number0, number1, number2, number3, number4].count(get)
+
+	
+	divs = 5 - avgdiv
+
+	avg = avgthing / divs
+	intavg = int(avg)
+
+	out1 = """The average number is {} """.format(avg)
+	out2 = """The integer is {}""".format(intavg) 
+	
+	print out1
+	print out2
+		
+
+	is_even = intavg % 2 == True
+	if is_even == True:
+		print "It is Odd"
+	else: 
+		print "It is even"
+	
+
 
 main()	
 
 
 	 
-
+ 
 	
