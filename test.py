@@ -1,17 +1,9 @@
-def countup(n):
-	if n>= thing :
-		print "Yay"
-	else:
-		print n 
-		countup(n+1) 
+def adder(stuff, total):
+    if stuff == "":
+        return total
+    else:
+        total += float(stuff) 
+        stuff = raw_input("Running total: " + str(total) + "\nNext number: ")
+        return adder(stuff, total)
 
-def main():
-	thing = float(raw_input("Put in a number that you want to count up to:")
-	
-	
-n = float(raw_input("Put in a number: "))
-	if 
-	countup(n)
-	return 
-main()
-	
+adder()
