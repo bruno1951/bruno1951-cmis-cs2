@@ -5,7 +5,7 @@
 #c) else
 #
 #2) What does 'return' do?
-# describes what will the def will do, and it will show what will be done to the input that will be given later
+# describes what will the def will do, and it will show what will be done to the input that will be given later. Spits out a value
 #
 #
 #
@@ -18,9 +18,9 @@
 #PART 2: Reading
 #Type the values for 12 of the 16 of the variables below.
 #
-#problem1_a)
+#problem1_a) 
 #problem1_b) square root of -3 which is -9
-#problem1_c)0
+#problem1_c) 0
 #problem1_d) -5
 #
 #problem2_a) true
@@ -28,14 +28,14 @@
 #problem2_c) false or syntax error
 #problem2_d) false or syntax error 
 #
-#problem3_a) return c
+#problem3_a) return c 
 #problem3_b) return b
 #problem3_c) return a
 #problem3_d) return b
 #
 #problem4_a)7
 #problem4_b)5
-#problem4_c)1.5
+#problem4_c) 0.125
 #problem4_d)5
 #
 
@@ -69,8 +69,6 @@ def main():
 
 	output = """The largest number was {}""".format(biggest)
 	print output
-
-
 
 
 
