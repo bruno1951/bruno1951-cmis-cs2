@@ -53,9 +53,9 @@ def main():
 	out = """Type in 3 numbers""" 
 	print out
 
-	number1 = raw_input("A:")
-	number2 = raw_input("B:")
-	number3 = raw_input("C:")
+	number1 = float(raw_input("A:"))
+	number2 = float(raw_input("B:"))
+	number3 = float(raw_input("C:"))
 	
 	if (number1 > number2) and (number1 > number3):
 		biggest = number1
