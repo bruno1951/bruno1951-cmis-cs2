@@ -7,7 +7,7 @@ def weapon(item):
 		strength = 15    
 		speed = 100
 
-	elif item == " iron sword ":
+	elif item == "iron sword ":
 		strength = 50 
 		speed = 50
 
@@ -23,12 +23,12 @@ def weapon(item):
 		strength = 150
 		speed = 25
 
-	elif item == "hunting Bow" :
-		strength = 55
-		speed = 45
-		rangeofattack = 100
-	elif item == "long bow"
-
+	else:
+		strength = random.randomint(0, 60)
+		speed = random.random(0, 60)
+		print "Incorrect input, you have been penalized" 
+	return strength 
+	return speed
    
 	
 def character(person):
@@ -36,80 +36,72 @@ def character(person):
 	if person == "Elf":
 		strength = 50 
 		speed = 70 
-		ranged_ability = 200
+
 
 	if person == "Human":
 		strength = 100
 		speed = 50 
-		ranged_ability = 150
+
 	
 	if person == "Dwarf": 
 		strength = 150
 		speed = 40
-		ranged_ability = 20
+
 	
 	if person == "Orc": 	
 		strength = 200
 		speed = 20 
-		ranged_ability = 0 
+
 		 
 	if person == "AUTOMAN":
 		strength = 300
 		speed = 400
-		ranged_ability = 0 
 
-def Pl
+	return strength 
+	return speed
+
   
 
 
-def hack&slash(playerStrength, playerspeed, playerange, enemystrength, enemyspeed, enemyrange):
-
-    
-    playerAttackResult = playerStrength + abs(playerAttackValue - targetValue)    
-    enemyAttackResult =  enemyStrength + targetValue
-    if playerAttackResult > enemyAttackResult:
-        return True
-    else:
-        return False
+def hacknslash(playerStrength, playerspeed, enemystrength, enemyspeed):
 
 
-def resultTemplate(playerStrength, enemyStrength, result):
+	playerAttack = playerStrength 
+	enemyAttackResult =  enemyStrength
+	speed = playerspeed
+	speed2 = enemyspeed
+	enemyhealth = 200
+	playerhealth = 200
 
-    if result == True:
-        msg = "wins"
-    else:
-        msg = "loses"
-    return """
-Player strength: {}
-Enemy strength: {}
-Player {}!
-""".format(playerStrength, enemyStrength, msg)
-
+	if speed > speed2:
+		enemyhealth - playerAttack
+		print "Succesful hit"
+	elif speed2 > speed:
+		playerhealth - enemyAttackResult  
+		print "You've been hit" 
+		
+def fight(enemyhealth, playerhealth):
+	
+	if enemyhealth == 0 or enemyhealth < 0:
+		out = """Enemy is down!"""
+		print out
+	elif enemyhealth > 0: 
+		if speed > speed2
+		enemyhealth - playerAttack
+	elif playerhealth == 0 or playerhealth < 0:
+		out = """You have been downed """
+		print out
+	elif playerhealth > 0: 
+		hackslash()
+	
 
 def main():
 
 
-    playerweapon = raw_input("Choose your weapon")
-    playercharacter = raw_input("What does enemy 1 eat? ")
-    enemy2Food = raw_input("What does enemy 2 eat? ")
+	playerweapon = raw_input("Choose your weapon: ")
+	playercharacter = raw_input("Choose your character: ")
+	enemy_character = raw_input("Who will you be facing: ")	
+	
+	result = fight(playerhealth, enemyhealth)
 
-    playerStrength = eat(playerFood)
-    enemy1Strength = eat(enemy1Food)
-    enemy2Strength = eat(enemy2Food)
-
-    playerAttackValue1 = getAttackValue()
-    result1 = wrestle(playerStrength, enemy1Strength, playerAttackValue1)
-
-    playerAttackValue2 = getAttackValue()   
-    result2 = wrestle(playerStrength, enemy2Strength, playerAttackValue2)
-    
-    output = """
-You ate {}.
-Enemy 1 ate {}.
-Enemy 2 ate {}.
-""".format(playerFood, enemy1Food, enemy2Food)
-    output += resultTemplate(playerStrength, enemy1Strength, result1)
-    output += resultTemplate(playerStrength, enemy2Strength, result2)
-
-    print output
 main()
