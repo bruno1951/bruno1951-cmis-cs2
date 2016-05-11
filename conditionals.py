@@ -19,17 +19,16 @@ def weapon(item):
 		strength = 5
 		speed = 150
 
-	elif item == " Battle ax ":
+	elif item == " Battle axe ":
 		strength = 150
 		speed = 25
 
 	else:
-		strength = random.randomint(0, 60)
-		speed = random.random(0, 60)
-		print "Incorrect input, you have been penalized" 
-	return strength 
-	return speed
-   
+		
+		strength = random.randint(0, 60)
+		speed = random.randint(0, 60)
+		print """Incorrect input, you have been penalized"""
+
 	
 def character(person):
 
@@ -70,9 +69,7 @@ def hacknslash(playerStrength, playerspeed, enemystrength, enemyspeed):
 	enemyAttackResult =  enemyStrength
 	speed = playerspeed
 	speed2 = enemyspeed
-	enemyhealth = 200
-	playerhealth = 200
-
+	
 	if speed > speed2:
 		enemyhealth - playerAttack
 		print "Succesful hit"
@@ -86,8 +83,8 @@ def fight(enemyhealth, playerhealth):
 		out = """Enemy is down!"""
 		print out
 	elif enemyhealth > 0: 
-		if speed > speed2
-		enemyhealth - playerAttack
+		if speed > speed2:
+			enemyhealth - playerAttack
 	elif playerhealth == 0 or playerhealth < 0:
 		out = """You have been downed """
 		print out
@@ -96,12 +93,20 @@ def fight(enemyhealth, playerhealth):
 	
 
 def main():
-
+	import random
+	import math
 
 	playerweapon = raw_input("Choose your weapon: ")
 	playercharacter = raw_input("Choose your character: ")
 	enemy_character = raw_input("Who will you be facing: ")	
 	
+	 
+	playerstrength1 = weapon(int(playerweapon)) + character(int(playercharacter))
+	enemystrength2 = character(int(enemy_character)) + random.randint(50, 150)
+
+	playerhealth = 200
+	enemyhealth = 200
+
 	result = fight(playerhealth, enemyhealth)
 
 main()
