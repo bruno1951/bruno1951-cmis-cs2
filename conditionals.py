@@ -1,6 +1,41 @@
 import random
 import math
 
+
+def question_answer(answer):
+	if answer = True
+	
+
+def main():
+	print """ You wake up with a bag on your head. Your body aches. You hear someone walk through the door, He asks begins asking you questions"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def weapon(item):
 
 	if item == "wooden sword":

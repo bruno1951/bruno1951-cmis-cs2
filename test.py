@@ -1,44 +1,38 @@
-#Biggest
-def Big(Numbers):
-	Num = raw_input("Number: ")
+import random
+import math
 
-	if Num == "":
-		out = """The highest number is {}""".format(Numbers)
+
+
+
+	
+
+def question1():
+	youranswer = raw_input("What is the name of your father?:")
+	answer1 = "George"
+	if answer1 != youranswer:
+		return False
+	if answer1 == youranswer:
+		return True
+
+def wrongorright1():
+	if result == True
+		question2()
+	if result == False
+		out = """Wrong answer, you can hear the stranger picking up something and hits you hard, you now have {} health""".format(health)
 		print out
-	else:
-		if Numbers > float(Num):
-			Big(Numbers)
-		else:
-			Big(float(Num))
 
 
-
-
-
-Big(-float("inf"))
-
-def small(Numbers):
-	Num = raw_input("Number:")
-	if Num == "":
-		out = """The highest number is {}""".format(Numbers)
-		print out
-	else:
-		if Numbers > float(Num):
-			Big(Numbers)
-		else:
-			Big(float(Num))
-	out = """The smaller number is {}""".format(Num)
-	print out
-
-
-def pow(x,n):
-	if n == 0: 
-		return 1
-	else: 
-		return x * pow(x,n-1)
-
+	
+			
+ 
+		 
 
 def main():
-	print pow(8,3)	
+	print """ You wake up with a bag on your head. Your body aches. You hear someone walk through the door, He asks begins asking you questions, you must get them right, some questions will have hints, you will begin with 3 questions"""
+
 main()
+	print """What is your name? """
+	raw_input("")
+
+
 
