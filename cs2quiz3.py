@@ -2,7 +2,7 @@
 
 #Section 1: Terminology
 # 1) What is a recursive function?
-# A recursive function is a function that you can continue forever, and repeats itself until something else has been done
+# A recursive function is a function that you can continue forever, and repeats itself until something else has been done. Calls itself
 #
 #
 # 2) What happens if there is no base case defined in a recursive function?
@@ -26,21 +26,21 @@
 # Read the following function definitions and function calls.
 # Then determine the values of the variables a1-d3.
 
-#a1 = 3,6
-#a2 = 7,2 
-#a3 =-1
+#a1 = 3,6 -1
+#a2 = 7,2  -1
+#a3 =-1 -1
 
-#b1 = 2
-#b2 = 2,1
-#b3 = 0,5
+#b1 = 2 +1
+#b2 = 2,1 -1 
+#b3 = 0,5 -1
 
-#c1 = -1,3
-#c2 = 4
-#c3 = 15,14
+#c1 = -1,3 -1 
+#c2 = 4 +1 
+#c3 = 15,14 -1
 
-#d1 = 6
-#d2 =4,2,4
-#d3 = 1,1,0
+#d1 = 6 +1
+#d2 =4,2,4    -1 
+#d3 = 1,1,0     -1
 
 #Section 3: Programming
 #Write a script that asks the user to enter a series of numbers.
