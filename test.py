@@ -15,9 +15,9 @@ def question1():
 		return True
 
 def wrongorright1():
-	if result == True
+	if result == True:
 		question2()
-	if result == False
+	if result == False:
 		out = """Wrong answer, you can hear the stranger picking up something and hits you hard, you now have {} health""".format(health)
 		print out
 
