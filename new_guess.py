@@ -21,7 +21,7 @@ def eachguess(randomized, trials):
 		exit()
 
 	elif int(guess) == randomized:
-		print "Your guess was correct"
+		return "Your guess was correct"
 
 
 

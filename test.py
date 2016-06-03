@@ -28,7 +28,7 @@ def wrongorright1():
 		 
 
 def main():
-	print """ You wake up with a bag on your head. Your body aches. You hear someone walk through the door, He asks begins asking you questions, you must get them right, some questions will have hints, you will begin with 3 questions"""
+	print " You wake up with a bag on your head. Your body aches. You hear someone walk through the door, He asks begins asking you questions, you must get them right, some questions will have hints, you will begin with 3 questions"
 
 main()
 	print """What is your name? """
