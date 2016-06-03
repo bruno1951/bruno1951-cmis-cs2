@@ -1,53 +1,50 @@
 import random
 
-def absyourdifference(firstNo, secondNo):
-	return abs(firstNo - secondNo)
+def rounds(theround, points):
+	if theround == 0:
+		out = """You got a score of {}""".format(points)
+		print out 
+	else:
+		out = """Round {}""".format(theround)
+		print out
+
+
+		points += eachguess(random.randint(1, 100), 5)
+
+
+
+		return rounds(theround -1, points)
+
+def eachguess(randomized, trials):
+	guess = raw_input("Guess a number:")
+	if  guess == "":
+		exit()
+
+	elif int(guess) == randomized:
+		print "Your guess was correct"
+
+
+
+
+	elif trials == 1:
+		print "You lose."
+		return 0
+
+
+
+	elif int(guess) > randomized:
+		print "Your guess was too high."
+		return eachguess(randomized, trials -1)
 	
-def main(): 
-	minimum = raw_input("Type in the minimum number:")
-	maximum = raw_input("Type in the maximum number:")
 
-	output = """I'm thinking of a number between {} and {} """.format(minimum, maximum)
-	print output
-
-
-	number = random.randint(int(minimum), int(maximum))
-	your_number = raw_input("Guess the number:")
-
+	elif int(guess) < randomized:
+		print "Your guess was too low."
+		return eachguess(randomized, trials -1)
 	
-	output = """The number was {}.
-Your guess was {}.
-""".format(number,your_number)
-	print output
-	
-	if int(your_number) == int(number):
-		print  "Congratulations, You have guessed the number correctly"
-
-	elif int(your_number) > int(number):
-		print "Your guess was over by" ,str(absyourdifference(int(your_number), int(number)))
-	
-	elif int(your_number) < int(number) :
-		print "Your guess was under by" ,str(absyourdifference(int(your_number), int(number)))
 
 
+
+def main():
+	print rounds(10, 0)
 
 main()
-
-
-
-
-
-
-
-
-#What is the minimum number? 5
-#What is the maximum number? 10
-#I'm thinking of a number from 5 to 10.
-#What do you think it is?: 7
-#The target was 9.
-#Your guess was 7.
-#That's under by 2.
-
-
-
-
